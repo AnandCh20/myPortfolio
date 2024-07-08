@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SideBar from './components/SideBar';
@@ -10,7 +10,7 @@ import Contact from './pages/Contact';
 
 const App = () => {
   return (
-    <div className="d-flex p-3">
+    <div className="d-flex p-3" style={{ minWidth: '20vw'}}>
       <SideBar />
       <div className="flex-grow-1 p-3">
         <Routes>
