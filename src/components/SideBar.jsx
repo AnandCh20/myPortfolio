@@ -7,7 +7,7 @@ export default function SideBar() {
             <div className="d-flex flex-column bg-dark text-white p-3 rounded-3 m-2"style={{ minWidth: '250px', maxWidth: '20vw' }}>
                 <div className="text-center mb-4 =" style={{width:'15vw'}}>
                     <img
-                        src="src\MY.png"
+                        src="./src/MY.png"
                         alt="AC"
                         className="img-thumbnail rounded-circle"
                     />
