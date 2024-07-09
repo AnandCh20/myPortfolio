@@ -1,0 +1,61 @@
+.sideBar {
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgb(255, 255, 255);
+}
+
+.sideImg {
+    margin: 0.5rem;
+    text-align: center;
+    font-size: large;
+    padding: 10px;
+    border-radius: 1rem;
+    
+}
+
+.sideContact {
+    text-align: left;
+    font-size: medium;
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+.sideSocial {
+    text-align: left;
+    font-size: medium;
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+/* Medium devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+    .sideBarContainer {
+        width: 60vw; /* Adjusting width for better responsiveness */
+        padding: 8px;
+        margin: 8px;
+        font-size: 0.9rem;
+    }
+
+    .sideImg,
+    .sideContact,
+    .sideSocial {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Small devices (phones, 450px and down) */
+@media (max-width: 450px) {
+    .sideBarContainer {
+        width: 80vw;
+        padding: 5px; 
+        margin: 2px;
+        font-size: 0.7rem;
+    }
+
+    .sideImg,
+    .sideContact,
+    .sideSocial {
+        padding: 5px;
+        font-size: 0.8rem;
+    }
+}
