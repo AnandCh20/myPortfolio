@@ -1,0 +1,68 @@
+.mycontainer {
+    padding: 1rem;
+    width: 100%;
+    max-width: 100vw;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 20px; /* Adjust the gap between columns and rows as needed */
+    padding: 20px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+.cards{
+    height: 200px;
+    padding: 20px;
+    border-radius: 1rem;
+    background-color: #212529; /* Dark background color */
+    color: #ffffff; /* Text color */
+    box-shadow: 0 2px 4px rgb(255, 255, 255); /* Box shadow */
+}
+
+#aboutme{
+    box-shadow: 0 2px 4px rgb(255, 255, 255); /* Box shadow */
+    padding: 0.7rem;
+
+}
+
+@media (max-width: 1024px) {
+    section {
+        grid-template-columns: repeat(2, minmax(250px, 1fr)); /* Two columns for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .mycontainer {
+        width: 80vw; /* Using vw (viewport width) for better responsiveness */
+    }
+
+    section {
+        grid-template-columns: repeat(2, minmax(200px, 1fr)); /* Two columns for smaller screens */
+        gap: 15px; /* Adjust gap for smaller screens */
+    }
+
+    #aboutme {
+        margin: 0;
+    }
+    
+}
+
+@media (max-width: 450px) {
+    .mycontainer {
+        width: 90vw; /* Adjusting width for very small screens */
+    }
+
+    section {
+        grid-template-columns: repeat(1, minmax(200px, 1fr)); /* One column for very small screens */
+        gap: 10px; /* Adjust gap for very small screens */
+    }
+
+    #aboutme {
+        margin: 0;
+    }
+}
+
+/* Adjust styles as needed for smaller screens */
