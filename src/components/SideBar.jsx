@@ -6,7 +6,7 @@ export default function SideBar() {
             <div className="sideBar">
                 <div className="sideImg">
                     <img
-                        src="./src/MY.png"
+                        src="MY.png"
                         alt="AC"
                         className="img-thumbnail rounded-circle"
                         width={"200px"}
