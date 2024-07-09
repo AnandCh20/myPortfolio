@@ -12,7 +12,7 @@ const ContactCard = () => {
                 borderRadius: "1rem",
                 background: "#212529", // Dark background color
                 color: "#ffffff", // Text color
-                boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)", // Box shadow
+                boxShadow: "0 2px 4px rgb(255, 255, 255)"
             }}>
 
                 <div className="card shadow-lg rounded-3 bg-dark text-white my-2 py-4 px-4">
