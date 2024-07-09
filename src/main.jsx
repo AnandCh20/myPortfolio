@@ -1,21 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SideBar from './components/SideBar';
-import Home from './pages/Home'; 
-// import About from './pages/About'; 
+import Home from './pages/Home';  
 import Projects from './pages/Projects'; 
 import Contact from './pages/Contact'; 
+import './main.css'
 
 const App = () => {
   return (
-    <div className="d-flex p-3" style={{ minWidth: '20vw'}}>
+    <div id="container1">
       <SideBar />
-      <div className="flex-grow-1 p-3">
+      <div className="p-3">
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/about" element={<About />} /> */}
+          
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
